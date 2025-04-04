@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaBalanites</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Company Logo" class="logo">
+            <h1>AquaBalanites</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">View Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="slideshow">
+               <div class="slide active" style="background-image: url('images/slide1.jpg');"></div>
+               <div class="slide" style="background-image: url('images/slide2.jpg');"></div>
+               <div class="slide" style="background-image: url('images/slide3.jpg');"></div>
+               <div class="slide" style="background-image: url('images/slide4.jpg');"></div>
+               <div class="slide" style="background-image: url('images/slide5.jpg');"></div>
+            </div>
+          <div class="hero-content">
+           <h2>Purified Drinking Water</h2>
+            <p>Pure, refreshing, and essential. Every drop is purified for your health, hydration, and a better tomorrow!</p>
+             <a href="#products" class="cta-button">Explore Products</a>
+          </div>
+        </section>
+
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>At Aqua Balanites, we believe that clean, safe, and refreshing water is not a luxury—it’s a necessity. Our mission is to provide premium purified drinking water that meets the highest quality standards, ensuring health and hydration for every sip you take.</p>
+                <p>Using advanced purification technology and rigorous filtration processes, we remove impurities while preserving essential minerals, delivering a crisp, refreshing taste that rejuvenates and sustains.</p>
+                <p>Whether at home, in the office, or on the go, Aqua Balanites is your trusted partner in hydration. We are committed to sustainability, responsible sourcing, and ensuring that every drop of water contributes to a healthier tomorrow.</p>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2>Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/product1.jpg" alt="Product 1" class="product-image">
+                    <h3>20 Litres</h3>
+                    <p>Large refill for families and businesses—pure hydration, guaranteed.</p>
+                    <button class="order-button" data-product="20 Litres">Order Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product2.jpg" alt="Product 2" class="product-image">
+                    <h3>18.9 Litres</h3>
+                    <p>Perfect size for homes and offices—refreshing and pure.</p>
+                    <button class="order-button" data-product="18.9 Litres">Order Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product3.jpg" alt="Product 3" class="product-image">
+                    <h3>10 Litres</h3>
+                    <p>Mid-size for convenience, perfect for your hydration needs.</p>
+                    <button class="order-button" data-product="10 Litres">Order Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product3.jpg" alt="Product 3" class="product-image">
+                    <h3>5 Litres</h3>
+                    <p>Compact and convenient, hydration made easy..</p>
+                    <button class="order-button" data-product="5 Litres">Order Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product3.jpg" alt="Product 3" class="product-image">
+                    <h3>1 Litre</h3>
+                    <p>On-the-go refreshment—pure water in every bottle.</p>
+                    <button class="order-button" data-product="1 Litre">Order Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product3.jpg" alt="Product 3" class="product-image">
+                    <h3>500 ML</h3>
+                    <p>Small bottle, big refreshment—perfect for daily hydration.</p>
+                    <button class="order-button" data-product="500 ML">Order Now</button>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container"> <!-- Added container for better layout control -->
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="text" placeholder="Your Phone Number" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Njoro, Nakuru, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 725400630</p>
+                    <p><i class="fas fa-envelope"></i> aquabalanites.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AquaBalanites.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+
+    <!-- Order Popup Modal (hidden by default) -->
+        <div id="orderModal" class="modal">
+        <div class="modal-content">
+         <span class="close-modal">&times;</span>
+          <h2>Place Your Order</h2>
+           <form class="order-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+            <option value="" disabled selected>Select Product</option>
+            <option value="20 Litres">20L</option>
+            <option value="18.9 Litres">18.9L</option>
+            <option value="10 Litres">10L</option>
+            </select>
+            <input type="tel" placeholder="Quantity" required>
+            <textarea placeholder="Additional Notes"></textarea>
+            <button type="submit" class="submit-button">Complete Order</button>
+          </form>
+        </div>
+        </div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
