@@ -120,7 +120,6 @@ h2::after {
 }
 
 /* Hero Section */
-
 .hero {
     position: relative;
     height: 100vh;
@@ -298,7 +297,6 @@ h2::after {
   padding-top: 1rem; /* Space before certifications */
   border-top: 1px solid rgba(30, 60, 114, 0.1); /* Optional subtle divider */
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
