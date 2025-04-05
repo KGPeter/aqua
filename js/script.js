@@ -78,6 +78,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Add to your existing IntersectionObserver
+const certItems = document.querySelectorAll('.certification-item');
+const certObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      entry.target.style.animation = `fadeIn 0.5s ease forwards ${index * 0.1}s`;
+    }
+  });
+}, { threshold: 0.1 });
+
+certItems.forEach(item => {
+  certObserver.observe(item);
+});
+
 // Hero Slideshow Functionality
 function initSlideshow() {
     const slides = document.querySelectorAll('.slide');
